@@ -1,0 +1,14 @@
+{
+    "name": "deep-ads",
+    "description": "remove deeply embedded ads",
+    "version": "0.1.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "matches": ["*://*.google.com/*"],
+            "js": ["google.js"],
+            "all_frames": true,
+            "run_at": "document_start"
+        }
+    ]
+  }
