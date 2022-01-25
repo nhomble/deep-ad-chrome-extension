@@ -5,6 +5,12 @@
     "manifest_version": 3,
     "content_scripts": [
         {
+            "matches": ["*://*.youtube.com/*"],
+            "js": ["lib/jquery-3.6.0.js", "youtube.js"],
+            "all_frames": true,
+            "run_at": "document_start"
+        },
+        {
             "matches": ["*://*.google.com/*"],
             "js": ["google.js"],
             "all_frames": true,
