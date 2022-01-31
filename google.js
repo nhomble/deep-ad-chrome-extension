@@ -5,6 +5,12 @@ const observer = new MutationObserver((mutations, obs) => {
     ad.remove();
   }
 
+  // search rhs ads
+  const rhsAds = document.getElementsByClassName("commercial-unit-desktop-rhs");
+  for(const ad of rhsAds){
+    ad.remove();
+  }
+
   // buy cards
   const cards = document.getElementById("taw");
   if(cards){
