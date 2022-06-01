@@ -1,20 +1,26 @@
 {
-    "name": "deep-ads",
-    "description": "remove deeply embedded ads",
-    "version": "0.1.0",
-    "manifest_version": 3,
-    "content_scripts": [
-        {
-            "matches": ["*://*.youtube.com/*"],
-            "js": ["lib/jquery-3.6.0.js", "youtube.js"],
-            "all_frames": true,
-            "run_at": "document_start"
-        },
-        {
-            "matches": ["*://*.google.com/*"],
-            "js": ["google.js"],
-            "all_frames": true,
-            "run_at": "document_start"
-        }
-    ]
-  }
+  "name": "deep-ads",
+  "description": "remove deeply embedded ads",
+  "version": "0.1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["lib/jquery-3.6.0.js", "youtube.js"],
+      "all_frames": true,
+      "run_at": "document_start"
+    },
+    {
+      "matches": ["*://*.google.com/*"],
+      "js": ["google.js"],
+      "all_frames": true,
+      "run_at": "document_start"
+    },
+    {
+      "matches": ["*://*.linkedin.com/*"],
+      "js": ["lib/jquery-3.6.0.js", "linkedin.js"],
+      "all_frames": true,
+      "run_at": "document_start"
+    }
+  ]
+}
